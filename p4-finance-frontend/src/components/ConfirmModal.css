@@ -1,0 +1,47 @@
+/* Confirm Modal Styles */
+
+.confirm-modal {
+  max-width: 400px;
+  text-align: center;
+  padding: var(--spacing-8);
+}
+
+.confirm-icon {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--spacing-5);
+  background: var(--danger-100);
+  color: var(--danger-500);
+  border-radius: var(--radius-full);
+  font-size: 28px;
+}
+
+[data-theme="dark"] .confirm-icon {
+  background: rgba(244, 63, 94, 0.15);
+}
+
+.confirm-title {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  color: var(--text-primary);
+  margin-bottom: var(--spacing-3);
+}
+
+.confirm-message {
+  font-size: var(--font-size-sm);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: var(--spacing-6);
+}
+
+.confirm-actions {
+  display: flex;
+  gap: var(--spacing-3);
+}
+
+.confirm-actions .btn {
+  flex: 1;
+}

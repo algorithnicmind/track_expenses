@@ -1,0 +1,61 @@
+/* Expense Modal Styles */
+
+.expense-modal {
+  max-width: 500px;
+}
+
+.type-toggle {
+  display: flex;
+  gap: var(--spacing-2);
+  padding: var(--spacing-1);
+  background: var(--bg-tertiary);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--spacing-5);
+}
+
+.type-btn {
+  flex: 1;
+  padding: var(--spacing-3);
+  background: none;
+  border: none;
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  color: var(--text-secondary);
+  border-radius: var(--radius-md);
+  cursor: pointer;
+  transition: all var(--transition-fast);
+}
+
+.type-btn.active {
+  color: white;
+}
+
+.type-btn.active.expense {
+  background: linear-gradient(135deg, var(--danger-500), var(--danger-600));
+  box-shadow: 0 4px 12px rgba(244, 63, 94, 0.3);
+}
+
+.type-btn.active.income {
+  background: linear-gradient(135deg, var(--success-500), var(--success-600));
+  box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.optional {
+  font-weight: 400;
+  color: var(--text-muted);
+}
+
+/* Spinner for modal */
+.spinner-small {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-top-color: white;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+}

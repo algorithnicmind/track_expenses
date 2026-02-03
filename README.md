@@ -1,197 +1,272 @@
-# 💰 Personal Finance Manager
+# P4 Finance Manager 💰
 
-<div align="center">
+A modern, full-stack personal finance management application built with React and Node.js. Track your income and expenses, visualize spending patterns, and gain insights into your financial health.
 
-![Version](https://img.shields.io/badge/version-1.0.0-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![MERN](https://img.shields.io/badge/stack-MERN-blueviolet.svg)
-![Status](https://img.shields.io/badge/status-Active-success.svg)
-
-**A comprehensive MERN-based web application for tracking, managing, and analyzing personal and shared expenses in real-time.**
-
-[📖 Documentation](./docs/PROJECT_OVERVIEW.md) • [🚀 Quick Start](#-quick-start) • [✨ Features](#-features) • [📸 Screenshots](#-screenshots)
-
-</div>
-
----
-
-## 🌟 Overview
-
-**Personal Finance Manager** is a modern, full-stack web application designed to help individuals and teams take control of their finances. Built with the MERN stack (MongoDB, Express.js, React.js, Node.js), it provides a secure, intuitive, and feature-rich platform for expense tracking and financial analysis.
-
-### 🎯 Key Highlights
-
-- 📊 **Real-Time Tracking** - Instantly sync and update financial records
-- 🔐 **Secure Authentication** - JWT-based protection for your data
-- 📁 **Document Management** - Store invoices, receipts, and financial documents
-- 👥 **Collaboration Support** - Manage shared expenses with teams or families
-- 📈 **Smart Analytics** - Visualize spending patterns with charts and graphs
-
----
-
-## 📁 Project Structure
-
-```
-project4/
-├── 📂 p4-finance-backend/     # Backend API (Node.js + Express)
-│   ├── config/                # Database configuration
-│   ├── controllers/           # Request handlers
-│   ├── middleware/            # Authentication middleware
-│   ├── models/                # MongoDB schemas
-│   ├── routes/                # API routes
-│   └── server.js              # Entry point
-│
-├── 📂 p4-finance-frontend/    # Frontend (React.js)
-│   ├── public/                # Static assets
-│   └── src/
-│       ├── api/               # API service calls
-│       ├── components/        # Reusable components
-│       ├── pages/             # Page components
-│       └── styles/            # CSS styles
-│
-└── 📂 docs/                   # Documentation
-    ├── PROJECT_OVERVIEW.md
-    ├── ARCHITECTURE.md
-    ├── INSTALLATION.md
-    ├── API_DOCUMENTATION.md
-    ├── FEATURES.md
-    ├── TECH_STACK.md
-    ├── USER_GUIDE.md
-    ├── CONTRIBUTING.md
-    ├── DEPLOYMENT.md
-    ├── CHANGELOG.md
-    └── FAQ.md
-```
-
----
+![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=flat-square&logo=react)
+![Node.js](https://img.shields.io/badge/Node.js-18+-339933?style=flat-square&logo=node.js)
+![MongoDB](https://img.shields.io/badge/MongoDB-6.0+-47A248?style=flat-square&logo=mongodb)
+![License](https://img.shields.io/badge/License-MIT-blue?style=flat-square)
 
 ## ✨ Features
 
-| Feature                    | Description                                 |
-| -------------------------- | ------------------------------------------- |
-| 💸 **Expense Tracking**    | Add, edit, delete, and categorize expenses  |
-| 📊 **Real-Time Updates**   | Instant synchronization across all reports  |
-| 🔒 **Secure Login**        | JWT-based authentication system             |
-| 📁 **Document Storage**    | Upload and manage financial documents       |
-| 👥 **Multi-User Support**  | Collaborative expense management            |
-| 🌓 **Dark/Light Mode**     | Theme toggle for enhanced UX                |
-| 💹 **Budget Tracking**     | Set budgets and receive overspending alerts |
-| 📤 **Export Options**      | Download reports as CSV/PDF                 |
-| 📈 **Analytics Dashboard** | Visual insights into spending patterns      |
+### Core Features
 
----
+- 📊 **Dashboard** - Overview of your finances with summary cards and charts
+- 💸 **Expense Tracking** - Add, edit, and delete income/expense entries
+- 📈 **Analytics** - Visual insights with interactive charts (Recharts)
+- 🏷️ **Categories** - Organize transactions by customizable categories
+- 🔍 **Search & Filter** - Find transactions quickly with advanced filters
 
-## 🚀 Quick Start
+### User Experience
+
+- 🌓 **Dark Mode** - Beautiful light and dark themes
+- 📱 **Responsive Design** - Works on desktop, tablet, and mobile
+- ⚡ **Fast & Smooth** - Optimized for performance
+- 🔔 **Toast Notifications** - Real-time feedback on actions
+
+### Security
+
+- 🔐 **JWT Authentication** - Secure token-based auth
+- 🛡️ **Password Hashing** - Bcrypt encryption
+- 🚫 **Rate Limiting** - Protection against brute force
+- ✅ **Input Validation** - Server-side data validation
+
+## 🏗️ Project Structure
+
+```
+project4/
+├── docs/                          # Documentation
+│   ├── ARCHITECTURE.md
+│   ├── FEATURE_STATUS.md
+│   ├── ROADMAP.md
+│   └── TASK_TRACKER.md
+│
+├── p4-finance-backend/            # Node.js/Express Backend
+│   ├── controllers/               # Route handlers
+│   │   ├── authController.js
+│   │   ├── expenseController.js
+│   │   └── userController.js
+│   ├── middleware/                # Custom middleware
+│   │   ├── auth.js
+│   │   ├── errorHandler.js
+│   │   └── validators.js
+│   ├── models/                    # Mongoose models
+│   │   ├── Expense.js
+│   │   └── User.js
+│   ├── routes/                    # API routes
+│   │   ├── authRoutes.js
+│   │   ├── expenseRoutes.js
+│   │   └── userRoutes.js
+│   ├── server.js                  # Entry point
+│   ├── package.json
+│   └── .env.example
+│
+├── p4-finance-frontend/           # React Frontend
+│   ├── public/
+│   │   ├── index.html
+│   │   ├── manifest.json
+│   │   └── robots.txt
+│   ├── src/
+│   │   ├── components/            # Reusable components
+│   │   │   ├── ExpenseModal.js
+│   │   │   └── ConfirmModal.js
+│   │   ├── context/               # React Context
+│   │   │   ├── AuthContext.js
+│   │   │   └── ThemeContext.js
+│   │   ├── layouts/               # Page layouts
+│   │   │   ├── AuthLayout.js
+│   │   │   └── DashboardLayout.js
+│   │   ├── pages/                 # Page components
+│   │   │   ├── Landing.js
+│   │   │   ├── Login.js
+│   │   │   ├── Signup.js
+│   │   │   ├── Dashboard.js
+│   │   │   ├── Expenses.js
+│   │   │   ├── Analytics.js
+│   │   │   ├── Profile.js
+│   │   │   ├── Settings.js
+│   │   │   └── NotFound.js
+│   │   ├── services/              # API services
+│   │   │   └── api.js
+│   │   ├── styles/                # Global styles
+│   │   │   └── index.css
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── package.json
+│   └── .env.example
+│
+└── .gitignore
+```
+
+## 🚀 Getting Started
 
 ### Prerequisites
 
-- Node.js (v14 or higher)
-- MongoDB (local or Atlas)
+- Node.js 18.0.0 or higher
 - npm or yarn
+- MongoDB (local or Atlas)
 
-### Installation
+### Backend Setup
 
-1. **Clone the repository**
-
-   ```bash
-   git clone https://github.com/yourusername/project4.git
-   cd project4
-   ```
-
-2. **Setup Backend**
+1. Navigate to the backend directory:
 
    ```bash
    cd p4-finance-backend
-   npm install
-   # Configure .env file with your MongoDB URI and JWT secret
-   npm run dev
    ```
 
-3. **Setup Frontend**
+2. Install dependencies:
 
    ```bash
-   cd p4-finance-frontend
    npm install
+   ```
+
+3. Create `.env` file from example:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Configure your environment variables:
+
+   ```env
+   PORT=5000
+   NODE_ENV=development
+   MONGO_URI=mongodb://localhost:27017/p4-finance
+   JWT_SECRET=your-super-secret-jwt-key-here
+   JWT_EXPIRE=7d
+   CORS_ORIGIN=http://localhost:3000
+   ```
+
+5. Start the server:
+
+   ```bash
+   # Development
+   npm run dev
+
+   # Production
    npm start
    ```
 
-4. **Access the Application**
-   - Frontend: `http://localhost:3000`
-   - Backend API: `http://localhost:5000`
+### Frontend Setup
 
-> 📖 For detailed installation instructions, see [INSTALLATION.md](./docs/INSTALLATION.md)
+1. Navigate to the frontend directory:
 
----
+   ```bash
+   cd p4-finance-frontend
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   npm install
+   ```
+
+3. Create `.env` file:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Configure environment variables:
+
+   ```env
+   REACT_APP_API_URL=http://localhost:5000/api
+   REACT_APP_NAME=P4 Finance
+   ```
+
+5. Start the development server:
+
+   ```bash
+   npm start
+   ```
+
+6. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+## 📚 API Documentation
+
+### Authentication
+
+| Method | Endpoint             | Description       |
+| ------ | -------------------- | ----------------- |
+| POST   | `/api/auth/register` | Register new user |
+| POST   | `/api/auth/login`    | Login user        |
+| GET    | `/api/auth/me`       | Get current user  |
+| POST   | `/api/auth/logout`   | Logout user       |
+
+### Expenses
+
+| Method | Endpoint                | Description                     |
+| ------ | ----------------------- | ------------------------------- |
+| GET    | `/api/expenses`         | Get all expenses (with filters) |
+| POST   | `/api/expenses`         | Create expense                  |
+| GET    | `/api/expenses/:id`     | Get single expense              |
+| PUT    | `/api/expenses/:id`     | Update expense                  |
+| DELETE | `/api/expenses/:id`     | Delete expense                  |
+| GET    | `/api/expenses/summary` | Get expense summary             |
+| GET    | `/api/expenses/trends`  | Get monthly trends              |
+| GET    | `/api/expenses/recent`  | Get recent transactions         |
+
+### Users
+
+| Method | Endpoint                     | Description      |
+| ------ | ---------------------------- | ---------------- |
+| GET    | `/api/users/profile`         | Get user profile |
+| PUT    | `/api/users/profile`         | Update profile   |
+| PUT    | `/api/users/change-password` | Change password  |
+| DELETE | `/api/users/account`         | Delete account   |
 
 ## 🛠️ Tech Stack
 
-| Layer              | Technology                                             |
-| ------------------ | ------------------------------------------------------ |
-| **Frontend**       | React.js, Redux/Context API, React Router, Material UI |
-| **Backend**        | Node.js, Express.js                                    |
-| **Database**       | MongoDB with Mongoose ODM                              |
-| **Authentication** | JWT (JSON Web Tokens)                                  |
-| **Styling**        | CSS, Material UI/Bootstrap                             |
+### Frontend
 
-> 📖 For detailed tech stack information, see [TECH_STACK.md](./docs/TECH_STACK.md)
+- **React 18** - UI Library
+- **React Router v6** - Routing
+- **Axios** - HTTP Client
+- **Recharts** - Charts & Graphs
+- **React Toastify** - Notifications
+- **React Icons** - Icon Library
 
----
+### Backend
 
-## 📸 Screenshots
+- **Node.js** - Runtime
+- **Express.js** - Web Framework
+- **MongoDB** - Database
+- **Mongoose** - ODM
+- **JWT** - Authentication
+- **Bcrypt** - Password Hashing
 
-<div align="center">
+### Security
 
-|                     Dashboard                     |               Expense Management                |
-| :-----------------------------------------------: | :---------------------------------------------: |
-| ![Dashboard](./docs/assets/dashboard-preview.png) | ![Expenses](./docs/assets/expenses-preview.png) |
+- **Helmet** - Security Headers
+- **express-rate-limit** - Rate Limiting
+- **express-validator** - Input Validation
+- **express-mongo-sanitize** - NoSQL Injection Protection
 
-|                    Reports                    |                    Settings                     |
-| :-------------------------------------------: | :---------------------------------------------: |
-| ![Reports](./docs/assets/reports-preview.png) | ![Settings](./docs/assets/settings-preview.png) |
+## 🎨 Design System
 
-</div>
+The app uses a custom CSS design system with:
 
----
+- CSS Custom Properties (variables)
+- Dark mode support
+- Responsive breakpoints
+- Modular component styles
+- Premium glassmorphism effects
+- Smooth animations
 
-## 📖 Documentation
+## 📝 License
 
-Comprehensive documentation is available in the `/docs` directory:
+This project is licensed under the MIT License.
 
-| Document                                            | Description                             |
-| --------------------------------------------------- | --------------------------------------- |
-| [PROJECT_OVERVIEW.md](./docs/PROJECT_OVERVIEW.md)   | Complete project description and goals  |
-| [ARCHITECTURE.md](./docs/ARCHITECTURE.md)           | System architecture and design patterns |
-| [INSTALLATION.md](./docs/INSTALLATION.md)           | Detailed setup and installation guide   |
-| [API_DOCUMENTATION.md](./docs/API_DOCUMENTATION.md) | Backend API endpoints reference         |
-| [FEATURES.md](./docs/FEATURES.md)                   | Detailed feature descriptions           |
-| [TECH_STACK.md](./docs/TECH_STACK.md)               | Technology stack details                |
-| [USER_GUIDE.md](./docs/USER_GUIDE.md)               | How to use the application              |
-| [CONTRIBUTING.md](./docs/CONTRIBUTING.md)           | Contribution guidelines                 |
-| [DEPLOYMENT.md](./docs/DEPLOYMENT.md)               | Deployment instructions                 |
-| [FAQ.md](./docs/FAQ.md)                             | Frequently asked questions              |
+## 🤝 Contributing
 
----
+Contributions are welcome! Please feel free to submit a Pull Request.
 
-## 👤 Author
-
-**Ankit**
-
-- 🎓 EDY Internship Project Submission
-- 📧 Contact: [Your Email]
-- 🔗 GitHub: [Your GitHub Profile]
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
 
 ---
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-<div align="center">
-
-**⭐ Star this repository if you find it helpful!**
-
-Made with ❤️ by Ankit
-
-</div>
+Made with ❤️ by [Ankit]
