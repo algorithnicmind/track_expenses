@@ -44,7 +44,7 @@ const Landing = () => {
                 <path d="M2 12l10 5 10-5" />
               </svg>
             </div>
-            <span>P4 Finance</span>
+            <span>Personal Finance Manager</span>
           </div>
           <div className="nav-links">
             <Link to="/login" className="nav-link">Login</Link>
@@ -126,7 +126,7 @@ const Landing = () => {
         <div className="container">
           <div className="benefits-content">
             <div className="benefits-text">
-              <h2 className="section-title">Why choose P4 Finance?</h2>
+              <h2 className="section-title">Why choose Personal Finance Manager?</h2>
               <p className="section-subtitle">
                 Built with love by developers who understand the importance of 
                 managing personal finances effectively.
@@ -205,7 +205,7 @@ const Landing = () => {
                     <path d="M2 12l10 5 10-5" />
                   </svg>
                 </div>
-                <span>P4 Finance</span>
+                <span>Personal Finance Manager</span>
               </div>
               <p className="footer-desc">
                 Your personal finance companion for smarter money management.
@@ -219,7 +219,7 @@ const Landing = () => {
             </div>
           </div>
           <div className="footer-bottom">
-            <p>© {new Date().getFullYear()} P4 Finance Manager. All rights reserved.</p>
+            <p>© {new Date().getFullYear()} Personal Finance Manager. All rights reserved.</p>
           </div>
         </div>
       </footer>

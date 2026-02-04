@@ -56,7 +56,7 @@ const DashboardLayout = ({ children }) => {
                 <path d="M2 12l10 5 10-5" />
               </svg>
             </div>
-            <span className="logo-text">P4 Finance</span>
+            <span className="logo-text">Personal Finance Manager</span>
           </div>
           <button 
             className="sidebar-close"

@@ -1,6 +1,6 @@
-# 📘 P4 Finance - User Guide
+# 📘 Personal Finance Manager - User Guide
 
-This guide will help you get started with the P4 Personal Finance Manager.
+This guide will help you get started with the Personal Finance Manager.
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ This guide will help you get started with the P4 Personal Finance Manager.
 
 ## ✨ Features Overview
 
-P4 Finance is designed to give you complete control over your personal finances. Here is what you can do:
+Personal Finance Manager is designed to give you complete control over your personal finances. Here is what you can do:
 
 ### 🔐 Secure Authentication
 
@@ -96,4 +96,4 @@ A: This feature is currently in development (Phase 4). Check the Roadmap for upd
 A: Currently, we do not have an automated email reset. Please contact the administrator to reset your password manually (Feature coming in Phase 1.3).
 
 **Q: Does it work on mobile?**
-A: Yes! P4 Finance is fully responsive and works great on smartphones and tablets.
+A: Yes! Personal Finance Manager is fully responsive and works great on smartphones and tablets.

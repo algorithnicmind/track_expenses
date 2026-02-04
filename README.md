@@ -1,4 +1,4 @@
-# P4 Finance Manager 💰
+# Personal Finance Manager 💰
 
 A modern, full-stack personal finance management application built with React and Node.js. Track your income and expenses, visualize spending patterns, and gain insights into your financial health.
 
@@ -171,7 +171,7 @@ project4/
 
    ```env
    REACT_APP_API_URL=http://localhost:5000/api
-   REACT_APP_NAME=P4 Finance
+   REACT_APP_NAME=Personal Finance Manager
    ```
 
 5. Start the development server:

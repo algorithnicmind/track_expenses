@@ -1,12 +1,12 @@
-# 🛠️ P4 Finance - Developer Guide
+# 🛠️ Personal Finance Manager - Developer Guide
 
-Welcome to the technical documentation for the Personal Finance Manager (P4 Finance). This guide provides an in-depth look at the system architecture, technology stack, and API design to help you understand and contribute to the project.
+Welcome to the technical documentation for the Personal Finance Manager. This guide provides an in-depth look at the system architecture, technology stack, and API design to help you understand and contribute to the project.
 
 ---
 
 ## 🏗️ System Architecture
 
-P4 Finance is built using the **MERN Stack** (MongoDB, Express.js, React, Node.js) following a Client-Server architecture.
+Personal Finance Manager is built using the **MERN Stack** (MongoDB, Express.js, React, Node.js) following a Client-Server architecture.
 
 ### High-Level Overview
 
