@@ -1,181 +1,99 @@
-# 📖 User Guide
+# 📘 P4 Finance - User Guide
 
-## Personal Finance Manager - How to Use the Application
-
----
+This guide will help you get started with the P4 Personal Finance Manager.
 
 ## 🚀 Getting Started
 
-### Step 1: Create an Account
+### 1. Registration
 
-1. Navigate to the application homepage
-2. Click **"Sign Up"** or **"Register"**
-3. Fill in your details:
-   - Full Name
-   - Email Address
-   - Password (minimum 6 characters)
-4. Click **"Create Account"**
-5. You'll be automatically logged in
-
-### Step 2: Login
-
-1. Go to the login page
-2. Enter your email and password
-3. Click **"Login"**
-4. You'll be redirected to your dashboard
+1.  Visit the **Sign Up** page.
+2.  Enter your **Name**, **Email**, and a secure **Password**.
+3.  Click "Sign Up". You will be redirected to the Login page.
 
 ---
 
-## 💼 Dashboard Overview
+## ✨ Features Overview
 
-The dashboard is your financial command center.
+P4 Finance is designed to give you complete control over your personal finances. Here is what you can do:
 
-| Section             | Description                                   |
-| ------------------- | --------------------------------------------- |
-| **Summary Cards**   | Quick view of total expenses, budget, savings |
-| **Recent Expenses** | Latest transactions at a glance               |
-| **Charts**          | Visual representation of spending             |
-| **Quick Actions**   | Add expense, set budget, generate report      |
+### 🔐 Secure Authentication
 
----
+- **Sign Up & Login**: Create a personal account to keep your data private.
+- **Session Management**: Stay logged in securely with automatic session handling.
 
-## 💰 Managing Expenses
+### 💰 Expense Tracking
 
-### Adding a New Expense
+- **Add Expenses**: Quickly record your daily spending (Food, Transport, Utilities, etc.).
+- **Categorization**: Organize your transactions into clear categories for better analysis.
+- **Edit & Delete**: Made a mistake? Easily update or remove transaction records.
+- **Filtering**: (Coming Soon) Filter your expenses by date range or category to find exactly what you're looking for.
 
-1. Click the **"+ Add Expense"** button
-2. Fill in the expense details:
-   - **Title**: Brief description (e.g., "Grocery Shopping")
-   - **Amount**: Expense amount
-   - **Category**: Select from dropdown
-   - **Date**: When the expense occurred
-   - **Description**: Optional notes
-3. Click **"Save Expense"**
+### 📊 Visual Dashboard
 
-### Editing an Expense
+- **Financial Snapshot**: See your **Total Income**, **Total Expenses**, and **Current Balance** at a glance.
+- **Interactive Charts**: (Coming Soon) View your spending habits with pie charts and trend lines.
+- **Recent Activity**: Quickly review your last 5 transactions directly from the dashboard.
 
-1. Find the expense in your list
-2. Click the **Edit** (pencil) icon
-3. Modify the details
-4. Click **"Update Expense"**
+### ⚙️ Personalization
 
-### Deleting an Expense
+- **Dark Mode**: A built-in dark theme that's easy on the eyes, especially at night.
+- **Profile Management**: Update your personal details and password.
 
-1. Find the expense in your list
-2. Click the **Delete** (trash) icon
-3. Confirm deletion in the popup
+### 2. Logging In
+
+1.  Enter your registered email and password.
+2.  Click "Sign In".
+3.  Upon success, you will see your **Dashboard**.
 
 ---
 
-## 📊 Expense Categories
+## 💡 Features & How-To
 
-| Category       | Icon | Usage                          |
-| -------------- | ---- | ------------------------------ |
-| Food & Dining  | 🍕   | Restaurants, groceries, coffee |
-| Transportation | 🚗   | Gas, uber, public transit      |
-| Utilities      | 💡   | Electricity, water, internet   |
-| Entertainment  | 🎬   | Movies, streaming, games       |
-| Shopping       | 🛒   | Clothes, electronics, general  |
-| Health         | 🏥   | Doctor, pharmacy, gym          |
-| Education      | 📚   | Courses, books, supplies       |
-| Other          | 📦   | Miscellaneous expenses         |
+### 📊 Dashboard
 
----
+The dashboard gives you a quick snapshot of your financial health:
 
-## 💹 Budget Management
+- **Cards**: See your Total Income, Total Expenses, and Net Balance.
+- **Charts**: Visualize your spending trends over time.
+- **Recent Transactions**: See the last 5 transactions you made.
 
-### Setting a Budget
+### 💸 Managing Expenses
 
-1. Navigate to **"Budgets"** section
-2. Click **"Create Budget"**
-3. Select a category
-4. Enter the monthly limit
-5. Click **"Set Budget"**
+To **Add a Transaction**:
 
-### Budget Alerts
+1.  Click the **+ (Add)** button on the Dashboard or go to the "Expenses" page.
+2.  Select **Type** (Income or Expense).
+3.  Enter the **Amount**, **Category**, and **Date**.
+4.  Add an optional description.
+5.  Click **Save**.
 
-- **Green (0-79%)**: On track
-- **Yellow (80-99%)**: Approaching limit
-- **Red (100%+)**: Budget exceeded
+To **Edit/Delete**:
 
----
+- Navigate to the "Expenses" page.
+- Click the **Edit** (Pencil) icon to modify.
+- Click the **Delete** (Trash) icon to remove.
 
-## 📈 Using Analytics
+### 📈 Analytics (Coming Soon)
 
-### Viewing Reports
+Advanced charts showing category breakdowns and monthly comparisons.
 
-1. Go to **"Analytics"** or **"Reports"**
-2. Select date range
-3. Choose report type:
-   - Category Breakdown
-   - Monthly Trends
-   - Day-wise Analysis
+### ⚙️ Settings
 
-### Understanding Charts
-
-- **Pie Chart**: Category distribution
-- **Line Chart**: Spending trends over time
-- **Bar Chart**: Category comparison
+- **Dark Mode**: Toggle between Light and Dark themes for comfortable viewing.
+- **Profile**: Update your name or change your password.
 
 ---
 
-## 📤 Exporting Data
+## ❓ Frequently Asked Questions (FAQ)
 
-### Export to CSV
+**Q: Is my data secure?**
+A: Yes! We use industry-standard encryption (BCrypt) for passwords and secure tokens (JWT) for authentication. Your data is stored in a secure MongoDB Atlas cluster.
 
-1. Go to **"Settings"** → **"Export"**
-2. Select date range
-3. Choose **"Export as CSV"**
-4. File downloads automatically
+**Q: Can I export my data?**
+A: This feature is currently in development (Phase 4). Check the Roadmap for updates.
 
-### Export to PDF
+**Q: I forgot my password. What do I do?**
+A: Currently, we do not have an automated email reset. Please contact the administrator to reset your password manually (Feature coming in Phase 1.3).
 
-1. Go to **"Reports"**
-2. Generate your desired report
-3. Click **"Download PDF"**
-
----
-
-## 🌓 Theme Settings
-
-### Toggle Dark/Light Mode
-
-1. Click the theme toggle (sun/moon icon)
-2. Theme switches immediately
-3. Preference is saved automatically
-
----
-
-## 🔐 Account Security
-
-### Changing Password
-
-1. Go to **"Settings"** → **"Security"**
-2. Enter current password
-3. Enter new password
-4. Confirm new password
-5. Click **"Update Password"**
-
-### Logging Out
-
-1. Click your profile icon
-2. Select **"Logout"**
-3. You'll be redirected to login page
-
----
-
-## 💡 Tips for Effective Use
-
-1. **Log expenses immediately** - Record expenses as they happen
-2. **Use categories consistently** - Makes analysis more meaningful
-3. **Set realistic budgets** - Start conservative, adjust over time
-4. **Review weekly** - Check your dashboard regularly
-5. **Use descriptions** - Add notes for future reference
-
----
-
-## ❓ Need Help?
-
-- Check the [FAQ](./FAQ.md)
-- Contact support at [your-email]
-- Open an issue on GitHub
+**Q: Does it work on mobile?**
+A: Yes! P4 Finance is fully responsive and works great on smartphones and tablets.
