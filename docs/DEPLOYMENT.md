@@ -50,6 +50,7 @@
 2. Click **"New Web Service"**
 3. Connect your GitHub repository
 4. Configure:
+   - **Root Directory**: `finance-backend`
    - **Build Command**: `npm install`
    - **Start Command**: `npm start`
 5. Add Environment Variables:
@@ -77,7 +78,7 @@ Your backend URL: `https://your-app.onrender.com`
 2. Click **"Import Project"**
 3. Select your repository
 4. Configure:
-   - **Root Directory**: `p4-finance-frontend`
+   - **Root Directory**: `finance-frontend`
    - **Build Command**: `npm run build`
    - **Output Directory**: `build`
 5. Add Environment Variables:
@@ -110,22 +111,22 @@ REACT_APP_API_URL=https://your-backend.onrender.com/api/v1
 
 ## ✅ Post-Deployment Checklist
 
-- [ ] Backend API responds correctly
-- [ ] Frontend loads without errors
-- [ ] Database connection works
-- [ ] Authentication works
-- [ ] CORS configured correctly
-- [ ] HTTPS enabled
+- [x] Backend API responds correctly
+- [x] Frontend loads without errors
+- [x] Database connection works
+- [x] Authentication works
+- [x] CORS configured correctly
+- [x] HTTPS enabled
 
 ---
 
 ## 🔒 Security Checklist
 
-- [ ] Use HTTPS only
-- [ ] Strong JWT secret (32+ characters)
-- [ ] Environment variables secured
-- [ ] Rate limiting enabled
-- [ ] Input validation active
+- [x] Use HTTPS only
+- [x] Strong JWT secret (32+ characters)
+- [x] Environment variables secured
+- [x] Rate limiting enabled
+- [x] Input validation active
 
 ---
 
