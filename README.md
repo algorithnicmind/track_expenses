@@ -34,66 +34,32 @@ A modern, full-stack personal finance management application built with React an
 ## 🏗️ Project Structure
 
 ```
-project4/
+track_expenses/
 ├── docs/                          # Documentation
-│   ├── ARCHITECTURE.md
-│   ├── FEATURE_STATUS.md
-│   ├── ROADMAP.md
-│   └── TASK_TRACKER.md
+│   ├── DEPLOYMENT.md
+│   ├── DEVELOPER_GUIDE.md
+│   ├── TASK_TRACKER.md
+│   └── USER_GUIDE.md
 │
-├── p4-finance-backend/            # Node.js/Express Backend
+├── finance-backend/               # Node.js/Express Backend
 │   ├── controllers/               # Route handlers
-│   │   ├── authController.js
-│   │   ├── expenseController.js
-│   │   └── userController.js
 │   ├── middleware/                # Custom middleware
-│   │   ├── auth.js
-│   │   ├── errorHandler.js
-│   │   └── validators.js
 │   ├── models/                    # Mongoose models
-│   │   ├── Expense.js
-│   │   └── User.js
 │   ├── routes/                    # API routes
-│   │   ├── authRoutes.js
-│   │   ├── expenseRoutes.js
-│   │   └── userRoutes.js
-│   ├── server.js                  # Entry point
-│   ├── package.json
-│   └── .env.example
+│   └── server.js                  # Entry point
 │
-├── p4-finance-frontend/           # React Frontend
+├── finance-frontend/              # React Frontend
 │   ├── public/
-│   │   ├── index.html
-│   │   ├── manifest.json
-│   │   └── robots.txt
 │   ├── src/
 │   │   ├── components/            # Reusable components
-│   │   │   ├── ExpenseModal.js
-│   │   │   └── ConfirmModal.js
 │   │   ├── context/               # React Context
-│   │   │   ├── AuthContext.js
-│   │   │   └── ThemeContext.js
 │   │   ├── layouts/               # Page layouts
-│   │   │   ├── AuthLayout.js
-│   │   │   └── DashboardLayout.js
 │   │   ├── pages/                 # Page components
-│   │   │   ├── Landing.js
-│   │   │   ├── Login.js
-│   │   │   ├── Signup.js
-│   │   │   ├── Dashboard.js
-│   │   │   ├── Expenses.js
-│   │   │   ├── Analytics.js
-│   │   │   ├── Profile.js
-│   │   │   ├── Settings.js
-│   │   │   └── NotFound.js
 │   │   ├── services/              # API services
-│   │   │   └── api.js
 │   │   ├── styles/                # Global styles
-│   │   │   └── index.css
 │   │   ├── App.js
 │   │   └── index.js
-│   ├── package.json
-│   └── .env.example
+│   └── package.json
 │
 └── .gitignore
 ```
@@ -111,7 +77,7 @@ project4/
 1. Navigate to the backend directory:
 
    ```bash
-   cd p4-finance-backend
+   cd finance-backend
    ```
 
 2. Install dependencies:
@@ -120,30 +86,18 @@ project4/
    npm install
    ```
 
-3. Create `.env` file from example:
-
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Configure your environment variables:
+3. Configure your environment variables in `.env`:
 
    ```env
    PORT=5000
-   NODE_ENV=development
-   MONGO_URI=mongodb://localhost:27017/p4-finance
-   JWT_SECRET=your-super-secret-jwt-key-here
-   JWT_EXPIRE=7d
-   CORS_ORIGIN=http://localhost:3000
+   NODE_ENV=production
+   MONGO_URI=your_mongodb_uri
+   JWT_SECRET=your_secret_key
    ```
 
-5. Start the server:
+4. Start the server:
 
    ```bash
-   # Development
-   npm run dev
-
-   # Production
    npm start
    ```
 
@@ -152,7 +106,7 @@ project4/
 1. Navigate to the frontend directory:
 
    ```bash
-   cd p4-finance-frontend
+   cd finance-frontend
    ```
 
 2. Install dependencies:
@@ -161,26 +115,17 @@ project4/
    npm install
    ```
 
-3. Create `.env` file:
-
-   ```bash
-   cp .env.example .env
-   ```
-
-4. Configure environment variables:
+3. Configure environment variables in `.env`:
 
    ```env
    REACT_APP_API_URL=http://localhost:5000/api
-   REACT_APP_NAME=Personal Finance Manager
    ```
 
-5. Start the development server:
+4. Start the development server:
 
    ```bash
    npm start
    ```
-
-6. Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 ## 📚 API Documentation
 
@@ -206,45 +151,24 @@ project4/
 | GET    | `/api/expenses/trends`  | Get monthly trends              |
 | GET    | `/api/expenses/recent`  | Get recent transactions         |
 
-### Users
-
-| Method | Endpoint                     | Description      |
-| ------ | ---------------------------- | ---------------- |
-| GET    | `/api/users/profile`         | Get user profile |
-| PUT    | `/api/users/profile`         | Update profile   |
-| PUT    | `/api/users/change-password` | Change password  |
-| DELETE | `/api/users/account`         | Delete account   |
-
 ## 🛠️ Tech Stack
 
-### Frontend
+- **Frontend**: React 18, React Router v6, Axios, Recharts, React Toastify
+- **Backend**: Node.js, Express.js, MongoDB, Mongoose, JWT, Bcrypt
+- **Security**: Helmet, express-rate-limit, express-validator
 
-- **React 18** - UI Library
-- **React Router v6** - Routing
-- **Axios** - HTTP Client
-- **Recharts** - Charts & Graphs
-- **React Toastify** - Notifications
-- **React Icons** - Icon Library
+## 📝 License
 
-### Backend
+This project is licensed under the MIT License.
 
-- **Node.js** - Runtime
-- **Express.js** - Web Framework
-- **MongoDB** - Database
-- **Mongoose** - ODM
-- **JWT** - Authentication
-- **Bcrypt** - Password Hashing
+## 🤝 Contributing
 
-### Security
+Contributions are welcome! Please see [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details.
 
-- **Helmet** - Security Headers
-- **express-rate-limit** - Rate Limiting
-- **express-validator** - Input Validation
-- **express-mongo-sanitize** - NoSQL Injection Protection
+---
 
-## 🎨 Design System
-
-The app uses a custom CSS design system with:
+Made with ❤️ by [Ankit]
+ign system with:
 
 - CSS Custom Properties (variables)
 - Dark mode support

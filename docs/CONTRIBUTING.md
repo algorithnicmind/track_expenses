@@ -33,8 +33,8 @@ Thank you for considering contributing to the Personal Finance Manager! This doc
 
 ### Prerequisites
 
-- Node.js (v14+)
-- MongoDB
+- Node.js (v18+)
+- MongoDB (local or Atlas)
 - Git
 
 ### Fork & Clone
@@ -43,22 +43,22 @@ Thank you for considering contributing to the Personal Finance Manager! This doc
 # Fork the repository on GitHub first
 
 # Clone your fork
-git clone https://github.com/YOUR-USERNAME/project4.git
+git clone https://github.com/YOUR-USERNAME/track_expenses.git
 
 # Add upstream remote
-cd project4
-git remote add upstream https://github.com/ORIGINAL-OWNER/project4.git
+cd track_expenses
+git remote add upstream https://github.com/ORIGINAL-OWNER/track_expenses.git
 ```
 
 ### Setup Development Environment
 
 ```bash
 # Install backend dependencies
-cd p4-finance-backend
+cd finance-backend
 npm install
 
 # Install frontend dependencies
-cd ../p4-finance-frontend
+cd ../finance-frontend
 npm install
 ```
 
@@ -118,10 +118,11 @@ Then create a Pull Request on GitHub.
 ### File Structure
 
 ```
-components/
-  ComponentName/
-    index.js        # Component logic
-    styles.css      # Component styles
+src/
+  components/
+    ComponentName.js
+  pages/
+    PageName.js
 ```
 
 ### API Development
@@ -135,12 +136,12 @@ components/
 
 ## ✅ Pull Request Checklist
 
-- [ ] Code follows project style
-- [ ] Self-reviewed my code
-- [ ] Added comments where needed
-- [ ] Updated documentation
-- [ ] No new warnings/errors
-- [ ] Tests pass (if applicable)
+- [x] Code follows project style
+- [x] Self-reviewed my code
+- [x] Added comments where needed
+- [x] Updated documentation
+- [x] No new warnings/errors
+- [x] Tests pass (if applicable)
 
 ---
 
