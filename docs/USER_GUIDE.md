@@ -26,12 +26,12 @@ Personal Finance Manager is designed to give you complete control over your pers
 - **Add Expenses**: Quickly record your daily spending (Food, Transport, Utilities, etc.).
 - **Categorization**: Organize your transactions into clear categories for better analysis.
 - **Edit & Delete**: Made a mistake? Easily update or remove transaction records.
-- **Filtering**: (Coming Soon) Filter your expenses by date range or category to find exactly what you're looking for.
+- **Filtering**: Filter your expenses by date range or category to find exactly what you're looking for.
 
 ### 📊 Visual Dashboard
 
 - **Financial Snapshot**: See your **Total Income**, **Total Expenses**, and **Current Balance** at a glance.
-- **Interactive Charts**: (Coming Soon) View your spending habits with pie charts and trend lines.
+- **Interactive Charts**: View your spending habits with pie charts and trend lines.
 - **Recent Activity**: Quickly review your last 5 transactions directly from the dashboard.
 
 ### ⚙️ Personalization
@@ -73,9 +73,9 @@ To **Edit/Delete**:
 - Click the **Edit** (Pencil) icon to modify.
 - Click the **Delete** (Trash) icon to remove.
 
-### 📈 Analytics (Coming Soon)
+### 📈 Analytics
 
-Advanced charts showing category breakdowns and monthly comparisons.
+Advanced charts showing category breakdowns and monthly comparisons are available in the Analytics tab.
 
 ### ⚙️ Settings
 
@@ -90,10 +90,10 @@ Advanced charts showing category breakdowns and monthly comparisons.
 A: Yes! We use industry-standard encryption (BCrypt) for passwords and secure tokens (JWT) for authentication. Your data is stored in a secure MongoDB Atlas cluster.
 
 **Q: Can I export my data?**
-A: This feature is currently in development (Phase 4). Check the Roadmap for updates.
+A: Yes! You can export your transaction history as a CSV or PDF from the "Settings" or "Expenses" page.
 
 **Q: I forgot my password. What do I do?**
-A: Currently, we do not have an automated email reset. Please contact the administrator to reset your password manually (Feature coming in Phase 1.3).
+A: You can use the "Forgot Password" link on the Login page to receive a reset link via your registered email.
 
 **Q: Does it work on mobile?**
 A: Yes! Personal Finance Manager is fully responsive and works great on smartphones and tablets.
